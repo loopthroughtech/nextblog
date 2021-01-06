@@ -59,7 +59,7 @@
     "rss": "^1.2.2",
     "sanitize-html": "^2.3.0",
     "unist-util-visit": "^2.0.3",
-    "critters"
+    "critters":"0.0.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.0.4",
