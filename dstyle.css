@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 150px;
 }
 [class=🐕] * {
   position: absolute;

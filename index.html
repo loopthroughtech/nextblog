@@ -2,13 +2,20 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS-Only Walking Dog</title>
+  <title>Loopthrough</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./tstyle.css">
+   <link rel="stylesheet" href="./dstyle.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
+
+<div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+<div class='console-container'>
+  <h2 style ="color:orange">Coming soon.</h2>
+  <h6 style ="color:#f9584c">_loopthrough.tech_</h6>
+</div>
+
 <div class="🐕">
   <div class="torso">
     <div class="fur">
@@ -77,8 +84,35 @@
     </div>
   </div>
 </div>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+  <defs>
+
+    
+    <filter id="squiggly-0">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+    <filter id="squiggly-1">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+    
+    <filter id="squiggly-2">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+    
+    <filter id="squiggly-4">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+    </filter>
+  </defs> 
+</svg>
+<script  src="./tscript.js"></script>
 </body>
 </html>
