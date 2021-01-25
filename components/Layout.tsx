@@ -39,9 +39,8 @@ export const Layout = ({ settings, header, children, isHome, sticky, previewPost
   const title = text(`SITE_TITLE`, site.title)
   const { siteUrl, memberSubscriptions } = settings.processEnv
 
-  const twitterUrl = site.twitter && `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
-  const facebookUrl = site.facebook && `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}`
-
+  const twitterUrl = ''
+  const facebookUrl = ''
   errorClass = errorClass || ``
 
   return (
