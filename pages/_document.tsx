@@ -18,6 +18,31 @@ export default class MyDocument extends Document {
     return (
       <Html {...{lang, className: 'casper' }}>
         <Head>
+        {/* <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8TM2NH7JL"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-S8TM2NH7JL');
+          </script> */}
+
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-S8TM2NH7JL"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-S8TM2NH7JL');
+                `,
+            }}
+          />
           <link
             rel="alternate"
             type="application/rss+xml"
